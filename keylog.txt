@@ -1,1 +1,0 @@
-"This file stores keystroke logs. It is empty by default."   

