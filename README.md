@@ -1,7 +1,8 @@
-# 🖥️ Ethical Keylogger  
+# 🖥️ KeystrokeTracker  
 
 🔹 A Python-based keylogger for ethical hacking and cybersecurity research.  
 🔹 Logs keystrokes with timestamps for security auditing and analysis.  
+🔹 Includes both **visible** (`keylogger.py`) and **silent** (`silentkeylogger.pyw`) execution modes.  
 🔹 Designed for **educational and legal purposes only**.  
 
 ---
@@ -12,15 +13,18 @@
 ---
 
 ## 📦 Features  
-✅ Captures keystrokes and stores them in a log file.  
+✅ Captures keystrokes and stores them in a log file (`keylog.txt`).  
 ✅ Detects special keys (Enter, Shift, Backspace, etc.).  
 ✅ Optimized log format for better readability.  
+✅ **Two modes**:  
+  - `keylogger.py` → Runs with a visible console.  
+  - `silentkeylogger.pyw` → Runs silently in the background.  
 
 ---
 
 ## 🔧 Installation  
 
 ```bash
-git clone https://github.com/YourUsername/Ethical-Keylogger.git  
-cd Ethical-Keylogger  
-pip install -r requirements.txt  # (if dependencies exist)
+https://github.com/Agentkiller9/KeystrokeTracker.git
+cd KeystrokeTracker
+pip install -r requirements.txt  
